@@ -28,21 +28,24 @@ export default function Hero() {
         <h1 data-reveal className="max-w-3xl text-5xl leading-[1.05] font-bold tracking-tight sm:text-7xl">
           {contact.name}
           <span className="mt-2 block text-3xl font-semibold text-slate-200 sm:text-5xl">
-            Digital Marketing Strategist &amp; Interactive Web Designer
+            Founder &amp; Lead Architect at Digital For Profit (DFP)
           </span>
         </h1>
         <p data-reveal className="mt-6 max-w-2xl text-lg text-zinc-300">
-          Building high-converting systems for businesses across Telangana &amp; AP.
+          Building the digital systems that help serious businesses grow.
         </p>
         <p data-reveal className="mt-3 max-w-2xl text-zinc-400">
-          I combine high-performance web engineering with direct-response digital marketing. Specializing in
-          interactive 3D web experiences, friction-free landing pages, and automated local lead capture funnels that
-          turn visitors into paying customers.
+          I lead Digital For Profit, where we design custom web applications, dependable business infrastructure and
+          intelligent automations for companies that expect measurable results.
         </p>
         <div data-reveal className="mt-8 flex flex-wrap gap-3">
+          <Button href="https://digitalforprofit.in" external>
+            View Our Business Systems
+          </Button>
           <Button
-            href={waLink("Hi Ajith, I'd like a high-converting website for my business. Let's talk.")}
+            href={waLink("Hi Ajith, I'd like to discuss a project with Digital For Profit.")}
             external
+            variant="ghost"
           >
             <MessageCircle size={18} /> Chat on WhatsApp
           </Button>

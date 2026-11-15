@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <section id="services" className="mx-auto max-w-6xl scroll-mt-16 px-4 py-24 sm:px-5">
       <p data-reveal className="text-xs tracking-[0.25em] text-emerald-400 uppercase">Services</p>
-      <h2 data-reveal className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Pick your starting point</h2>
+      <h2 data-reveal className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">What we build for you</h2>
       <div className="mt-12 grid gap-5 md:grid-cols-3">
         {tiers.map((t) => (
           <div key={t.id} data-reveal className="glass flex flex-col p-6">

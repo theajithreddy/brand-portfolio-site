@@ -13,9 +13,9 @@ export default function ProjectEstimator() {
     setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id]))
 
   const message = [
-    `Hi ${contact.name}, ${name ? `I'm ${name}. ` : ''}I'd like a quote.`,
+    `Hi ${contact.name}, ${name ? `I'm ${name}. ` : ''}I'd like to discuss a project.`,
     '',
-    `Package: ${tier.name}`,
+    `Service: ${tier.name}`,
     `Add-ons: ${picked.length ? addons.filter((a) => picked.includes(a.id)).map((a) => a.name).join(', ') : 'None'}`,
     '',
     'Please share the next steps.',
@@ -28,7 +28,7 @@ export default function ProjectEstimator() {
 
       <div data-reveal className="glass mt-10 p-6 sm:p-8">
         <fieldset>
-          <legend className="text-sm font-medium text-zinc-300">1. Choose a package</legend>
+          <legend className="text-sm font-medium text-zinc-300">1. Choose a service</legend>
           <div className="mt-3 grid gap-3 sm:grid-cols-3">
             {tiers.map((t) => (
               <label
