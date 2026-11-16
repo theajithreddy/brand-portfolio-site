@@ -75,12 +75,5 @@ export const projects: Project[] = [
   },
 ]
 
-export const clientProjects = projects.filter((p) => p.variant === 'Live Site')
-export const demoProjects = projects.filter((p) => p.variant === 'Interactive 3D Demo')
+export const clientProjects = projects
 export const clientIndustries = industries.filter((i) => clientProjects.some((p) => p.industry === i))
-
-// Empty slots for upcoming 3D concept demos.
-export const demoSlots = [
-  { id: 'slot-1', title: 'Next concept demo', note: '3D concept in progress' },
-  { id: 'slot-2', title: 'Next concept demo', note: 'Coming soon' },
-]

@@ -1,17 +1,15 @@
 import { useEffect, useState } from 'react'
-import { CreditCard, Menu, MessageCircle, Phone, X } from 'lucide-react'
+import { Menu, MessageCircle, Phone, X } from 'lucide-react'
 import { contact, telLink, waLink } from '../../data/contact'
-import { usePayment } from './PaymentModal'
 
 const links = [
+  ["Approach", "#strategy"],
   ["Client Work", "#work"],
-  ["Interactive Demos", "#demos"],
-  ["Services", "#services"],
-  ["Project Scope", "#estimator"],
+  ["Contact", "#contact"],
 ] as const
 
 const avatar = `${import.meta.env.BASE_URL}assets/ajith-reddy.jpeg`
-const waHref = waLink('Hi Ajith, I found your portfolio and would like to talk about a project.')
+const waHref = waLink('Hi Ajith, I found your portfolio and would like to talk about a custom project.')
 
 function PulseDot() {
   return (
@@ -24,7 +22,6 @@ function PulseDot() {
 
 export default function Header() {
   const [open, setOpen] = useState(false)
-  const openPayment = usePayment()
 
   useEffect(() => {
     if (!open) return
@@ -59,13 +56,6 @@ export default function Header() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={openPayment}
-            className="hidden items-center gap-2 rounded-full border border-emerald-500/40 bg-white/5 px-4 py-2 text-sm font-semibold text-emerald-300 transition hover:bg-emerald-500/10 sm:inline-flex"
-          >
-            <CreditCard size={16} /> Make Payment
-          </button>
           <a
             href={waHref}
             target="_blank"
@@ -99,16 +89,6 @@ export default function Header() {
             ))}
           </ul>
           <div className="grid grid-cols-2 gap-3">
-            <button
-              type="button"
-              onClick={() => {
-                setOpen(false)
-                openPayment()
-              }}
-              className="col-span-2 inline-flex items-center justify-center gap-2 rounded-full border border-emerald-500/40 bg-white/5 px-4 py-3 text-sm font-semibold text-emerald-300"
-            >
-              <CreditCard size={16} /> Make Payment
-            </button>
             <a
               href={waHref}
               target="_blank"
