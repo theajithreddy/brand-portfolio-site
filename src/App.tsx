@@ -6,6 +6,7 @@ import Header from "./components/ui/Header"
 import Hero from './components/sections/Hero'
 import Pillars from './components/sections/Pillars'
 import CaseStudies from './components/sections/CaseStudies'
+import Venture from './components/sections/Venture'
 import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
 
@@ -40,6 +41,7 @@ export default function App() {
         <Hero />
         <Pillars />
         <CaseStudies />
+        <Venture />
         <Contact />
       </main>
       <Footer />

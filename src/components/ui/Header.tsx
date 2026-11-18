@@ -5,6 +5,7 @@ import { contact, telLink, waLink } from '../../data/contact'
 const links = [
   ["Approach", "#strategy"],
   ["Client Work", "#work"],
+  ["DFPSystems", "#dfp"],
   ["Contact", "#contact"],
 ] as const
 
