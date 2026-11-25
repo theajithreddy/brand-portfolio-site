@@ -1,10 +1,9 @@
 // Everything in the site reads contact details from this file.
 export const contact = {
   name: 'Ajith Reddy',
-  // Digits only, with country code, no "+".
-  whatsappNumber: '919182330659',
-  phoneDisplay: '+91 91823 30659',
-  phoneTel: '+919182330659',
+  // The DFP WhatsApp assistant (digits only, with country code). The owner's personal number is never public and
+  // no phone number is shown: calls go through the free AI call back (lead form). Owner's rule, 2026-11-25.
+  whatsappNumber: '919100139337',
   github: 'https://github.com/theajithreddy',
   instagram: 'https://www.instagram.com/theajithreddy/',
   facebook: 'https://www.facebook.com/theajithreddy',
@@ -18,7 +17,7 @@ export const contact = {
 /** The agency Ajith founded. */
 export const dfp = {
   name: 'DFPSystems',
-  url: 'https://digitalforprofit.in/',
+  url: 'https://dfpsystems.in/',
   facebook: 'https://www.facebook.com/dfp.systems',
   instagram: 'https://www.instagram.com/dfp.systems/',
 } as const
@@ -43,4 +42,5 @@ export const isContactConfigured = !contact.whatsappNumber.includes('X')
 export const waLink = (message: string) =>
   `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(message)}`
 
-export const telLink = `tel:${contact.phoneTel}`
+/** "Call" buttons open the lead form: the AI assistant calls the visitor back in about a minute. */
+export const telLink = '#contact'

@@ -32,7 +32,7 @@ export default function Hero() {
           </span>
         </h1>
         <p data-reveal className="mt-6 max-w-2xl text-lg text-zinc-300">
-          Building high-converting systems for businesses across Telangana &amp; AP.
+          Building high-converting systems for local businesses. Based in Warangal.
         </p>
         <p data-reveal className="mt-3 max-w-2xl text-zinc-400">
           I combine high-performance web engineering with direct-response digital marketing. Specializing in
@@ -47,7 +47,7 @@ export default function Hero() {
             <MessageCircle size={18} /> Chat on WhatsApp
           </Button>
           <Button href={telLink} variant="ghost">
-            <Phone size={18} /> Call now
+            <Phone size={18} /> Free AI call back
           </Button>
         </div>
       </div>

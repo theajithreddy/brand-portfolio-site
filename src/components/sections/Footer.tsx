@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 text-sm text-zinc-300 sm:items-end">
           <div className="flex flex-wrap items-center gap-5">
             <a href={telLink} className="inline-flex items-center gap-2 hover:text-emerald-400">
-              <Phone size={16} /> {contact.phoneDisplay}
+              <Phone size={16} /> Free AI call back
             </a>
             {contact.email && (
               <a href={`mailto:${contact.email}`} className="inline-flex items-center gap-2 hover:text-emerald-400">

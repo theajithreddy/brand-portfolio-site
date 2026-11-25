@@ -29,7 +29,7 @@ export default function Venture() {
       </div>
       <div data-reveal className="mt-8">
         <Button href={dfp.url} external variant="ghost">
-          Visit digitalforprofit.in <ArrowUpRight size={18} />
+          Visit dfpsystems.in <ArrowUpRight size={18} />
         </Button>
       </div>
     </section>

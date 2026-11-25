@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Menu, MessageCircle, Phone, X } from 'lucide-react'
-import { contact, telLink, waLink } from '../../data/contact'
+import { telLink, waLink } from '../../data/contact'
 
 const links = [
   ["Approach", "#strategy"],
@@ -102,7 +102,7 @@ export default function Header() {
               href={telLink}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-zinc-700 bg-white/5 px-4 py-3 text-sm font-semibold"
             >
-              <Phone size={16} /> Call {contact.phoneDisplay.slice(-5)}
+              <Phone size={16} /> AI call back
             </a>
           </div>
         </div>

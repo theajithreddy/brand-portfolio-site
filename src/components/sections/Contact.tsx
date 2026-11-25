@@ -24,7 +24,7 @@ export default function Contact() {
             <MessageCircle size={18} /> Message on WhatsApp
           </Button>
           <Button href={telLink} variant="ghost">
-            <Phone size={18} /> Call now
+            <Phone size={18} /> Free AI call back
           </Button>
         </div>
       </div>
